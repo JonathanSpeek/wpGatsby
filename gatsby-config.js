@@ -3,11 +3,12 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
+    'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        baseUrl: 'localhost:8080',
+        baseUrl: 'thewholemind.me',
         protocol: 'http',
         hostingWPCOM: false,
         useACF: true,
